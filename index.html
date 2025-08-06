@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruth Rezende - Consultora Natura</title>
   <link rel="icon" type="image/png" href="ico.natura.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       box-sizing: border-box;
@@ -98,6 +99,11 @@
       color: #2c3e50;
     }
 
+    .product-card h4 i {
+      margin-right: 8px;
+      color: #274e6a;
+    }
+
     .product-card p {
       font-size: 0.95rem;
       color: #555;
@@ -146,6 +152,17 @@
     footer p {
       margin: 0.3rem 0;
     }
+
+    footer .credit {
+      font-size: 0.75rem;
+      opacity: 0.6;
+      margin-top: 1rem;
+    }
+
+    footer .credit a {
+      color: inherit;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -176,19 +193,19 @@
       <h2>Produtos em Destaque</h2>
       <div class="products-grid">
         <div class="product-card">
-          <h4>🧼 Cuidados com o Corpo</h4>
+          <h4><i class="fas fa-soap"></i> Cuidados com o Corpo</h4>
           <p>Sabonetes, esfoliantes e kits de banho aromáticos.</p>
         </div>
         <div class="product-card">
-          <h4>🧴 Hidratação</h4>
+          <h4><i class="fas fa-pump-soap"></i> Hidratação</h4>
           <p>Óleos e hidratantes para corpo e mãos.</p>
         </div>
         <div class="product-card">
-          <h4>🛡️ Proteção</h4>
+          <h4><i class="fas fa-shield-alt"></i> Proteção</h4>
           <p>Desodorantes e protetores solares.</p>
         </div>
         <div class="product-card">
-          <h4>💧 Bem-estar</h4>
+          <h4><i class="fas fa-tint"></i> Bem-estar</h4>
           <p>Álcool em gel perfumado e muito mais.</p>
         </div>
       </div>
@@ -221,6 +238,12 @@
     <p>&copy; 2025 Ruth Rezende | Consultora Natura Oficial</p>
     <p>Produtos de qualidade com atendimento de excelência</p>
     <img src="ico.natura.png" alt="Logo Natura no rodapé" />
+
+    <p class="credit">
+      Desenvolvido por 
+      <a href="https://wa.me/5521982608991" target="_blank"><strong>Juliano Lima</strong></a>
+      para uso exclusivo da consultora Ruth Rezende - Natura
+    </p>
   </footer>
 
 </body>
