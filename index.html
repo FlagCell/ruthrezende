@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruth Rezende - Consultora Natura</title>
   <link rel="icon" type="image/png" href="ico.natura.png" />
   <style>
@@ -13,167 +13,121 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #f2f4f7 0%, #e6ecf0 100%);
       color: #2c3e50;
-      min-height: 100vh;
     }
 
     header {
       background: linear-gradient(135deg, #1c3a57 0%, #274e6a 100%);
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(28, 58, 87, 0.3);
+      padding: 2rem 1rem;
     }
 
     header img {
-      max-width: 120px;
+      width: 100px;
       margin-bottom: 1rem;
     }
 
     header h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
+      font-size: 2.2rem;
       margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: clamp(1rem, 3vw, 1.2rem);
-      opacity: 0.95;
+      font-size: 1.1rem;
     }
 
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-      background: white;
-      border-radius: 16px;
-      padding: 2rem;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-      border: 1px solid #dce3e8;
-    }
-
-    .section h2 {
-      color: #1c3a57;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 3px solid #607d8b;
+      max-width: 900px;
+      margin: auto;
+      padding: 1.5rem;
     }
 
     .whatsapp-highlight {
       background: linear-gradient(135deg, #3b7ca5 0%, #5c8db1 100%);
       color: white;
-      border-radius: 20px;
+      border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 2rem;
       text-align: center;
     }
 
     .whatsapp-highlight h3 {
-      font-size: 1.2rem;
       margin-bottom: 1rem;
-    }
-
-    .whatsapp-highlight .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      align-items: center;
     }
 
     .whatsapp-highlight a {
       color: white;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h2 {
+      color: #1c3a57;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #607d8b;
+      padding-bottom: 0.5rem;
     }
 
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .product-card {
       background: #f0f4f8;
-      padding: 1.5rem;
-      border-radius: 12px;
       border-left: 4px solid #607d8b;
+      border-radius: 8px;
+      padding: 1rem;
     }
 
     .product-card h4 {
-      color: #2c3e50;
       margin-bottom: 0.5rem;
       font-size: 1.1rem;
+      color: #2c3e50;
     }
 
     .product-card p {
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: linear-gradient(135deg, #1c3a57 0%, #274e6a 100%);
-      color: white;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: 600;
-      transition: 0.3s ease;
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-primary:hover {
-      background: #274e6a;
-    }
-
-    .contact-section {
-      background: #f0f4f8;
-      border: 2px solid #607d8b;
+      font-size: 0.95rem;
+      color: #555;
     }
 
     .contact-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
+      gap: 1rem;
+      margin-bottom: 1rem;
     }
 
     .contact-item {
       text-align: center;
-      padding: 1rem;
     }
 
     .contact-item .icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .contact-item h4 {
-      color: #1c3a57;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
-      font-size: 1.1rem;
     }
 
-    .contact-item a {
-      color: #274e6a;
+    .btn-primary {
+      display: inline-block;
+      background: linear-gradient(135deg, #1c3a57 0%, #274e6a 100%);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
       text-decoration: none;
-      font-weight: 600;
-    }
-
-    .contact-item a:hover {
-      text-decoration: underline;
+      font-weight: bold;
+      margin-top: 1rem;
     }
 
     footer {
@@ -181,18 +135,16 @@
       color: white;
       text-align: center;
       padding: 2rem 1rem;
-      margin-top: 3rem;
     }
 
     footer img {
-      max-width: 100px;
+      width: 80px;
       margin-top: 1rem;
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
     footer p {
-      margin-bottom: 0.5rem;
-      opacity: 0.9;
+      margin: 0.3rem 0;
     }
   </style>
 </head>
@@ -205,72 +157,64 @@
   </header>
 
   <div class="container">
+
     <section class="whatsapp-highlight">
-      <h3>🌟 Atendimento Personalizado em Praça da Bandeira e Tijuca!</h3>
-      <div class="contact-info">
-        <span>📱 <a href="https://wa.me/5521983204444" target="_blank">(21) 98320-4444</a></span>
-        <span>•</span>
-        <span>🌐 <a href="https://www.natura.com.br/consultoria/ruthrezende" target="_blank">Loja Online</a></span>
-        <span>•</span>
-        <span>✨ Entrega Rápida e Segura</span>
-      </div>
+      <h3>🌟 Atendimento em Praça da Bandeira e Tijuca</h3>
+      <p>
+        📱 <a href="https://wa.me/5521983204444" target="_blank">(21) 98320-4444</a><br/>
+        🌐 <a href="https://www.natura.com.br/consultoria/ruthrezende" target="_blank">Loja Online Oficial</a><br/>
+        ✨ Entrega rápida e segura!
+      </p>
     </section>
 
-    <section class="section about">
+    <section class="section">
       <h2>Sobre Mim</h2>
-      <p>Olá! Sou a Ruth, consultora oficial da Natura nas regiões da Praça da Bandeira e Tijuca, no Rio de Janeiro. Com anos de experiência, trabalho com carinho e dedicação para oferecer os melhores produtos de cuidado pessoal e bem-estar.</p>
-      <p>Meu compromisso é proporcionar um atendimento personalizado, ajudando você a encontrar os produtos ideais para suas necessidades. Faça seu pedido pelo WhatsApp e receba com toda comodidade em sua casa!</p>
+      <p>Olá! Sou a Ruth, consultora oficial da Natura nas regiões da Praça da Bandeira e Tijuca, no Rio de Janeiro. Trabalho com carinho e dedicação para oferecer os melhores produtos de cuidado pessoal e bem-estar. Faça seu pedido pelo WhatsApp e receba com comodidade!</p>
     </section>
 
-    <section class="section products">
+    <section class="section">
       <h2>Produtos em Destaque</h2>
       <div class="products-grid">
         <div class="product-card">
           <h4>Cuidados com o Corpo</h4>
-          <p>Sabonetes artesanais, kits de banho aromáticos e esfoliantes corporais para uma pele sedosa e perfumada.</p>
+          <p>Sabonetes, esfoliantes e kits de banho aromáticos.</p>
         </div>
         <div class="product-card">
-          <h4>Hidratação Intensa</h4>
-          <p>Óleos corporais nutritivos e hidratantes para corpo e mãos que deixam sua pele macia e protegida.</p>
+          <h4>Hidratação</h4>
+          <p>Óleos e hidratantes para corpo e mãos.</p>
         </div>
         <div class="product-card">
-          <h4>Proteção Diária</h4>
-          <p>Desodorantes roll-on e aerossol de longa duração, além de protetores solares para cuidar da sua pele.</p>
+          <h4>Proteção</h4>
+          <p>Desodorantes e protetores solares.</p>
         </div>
         <div class="product-card">
-          <h4>Higiene e Bem-estar</h4>
-          <p>Álcool em gel perfumado e produtos especiais para manter você protegida com fragrância única.</p>
+          <h4>Bem-estar</h4>
+          <p>Álcool em gel perfumado e muito mais.</p>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section">
+    <section class="section">
       <h2>Entre em Contato</h2>
       <div class="contact-grid">
         <div class="contact-item">
-          <span class="icon">📱</span>
-          <h4>WhatsApp</h4>
-          <a href="https://wa.me/5521983204444" target="_blank">(21) 98320-4444</a>
-          <p>Atendimento rápido e personalizado</p>
+          <div class="icon">📱</div>
+          <p><strong>WhatsApp:</strong><br/><a href="https://wa.me/5521983204444" target="_blank">(21) 98320-4444</a></p>
         </div>
         <div class="contact-item">
-          <span class="icon">📍</span>
-          <h4>Localização</h4>
-          <p>Praça da Bandeira e Tijuca<br>Rio de Janeiro - RJ</p>
+          <div class="icon">📍</div>
+          <p><strong>Localização:</strong><br/>Praça da Bandeira e Tijuca - RJ</p>
         </div>
         <div class="contact-item">
-          <span class="icon">🌐</span>
-          <h4>Loja Online</h4>
-          <a href="https://www.natura.com.br/consultoria/ruthrezende" target="_blank">natura.com.br/consultoria/ruthrezende</a>
-          <p>Catálogo completo disponível</p>
+          <div class="icon">🌐</div>
+          <p><strong>Loja Online:</strong><br/><a href="https://www.natura.com.br/consultoria/ruthrezende" target="_blank">natura.com.br/consultoria/ruthrezende</a></p>
         </div>
       </div>
       <div style="text-align: center;">
-        <a class="btn-primary" href="https://wa.me/5521983204444?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20produtos%20Natura%20com%20a%20consultora%20Ruth%20Rezende." target="_blank">
-          Falar com a Consultora Ruth
-        </a>
+        <a class="btn-primary" href="https://wa.me/5521983204444?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20Natura%20com%20a%20consultora%20Ruth%20Rezende." target="_blank">Falar com a Consultora Ruth</a>
       </div>
     </section>
+
   </div>
 
   <footer>
